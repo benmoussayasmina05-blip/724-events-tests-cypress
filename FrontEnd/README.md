@@ -65,3 +65,15 @@ npm.cmd exec -- cypress run --spec "cypress/e2e/UI/*.cy.js"
 
 Certains tests peuvent échouer lorsqu'ils détectent des anomalies connues de l'application. Les résultats doivent être analysés en comparant le comportement observé au résultat attendu.
 
+### Génération d'un rapport de tests Cypress
+
+Depuis le dossier `FrontEnd`, avec le backend démarré :
+
+```powershell
+npm.cmd exec -- cypress run --spec "cypress/e2e/API/contact-api.cy.js" --reporter junit --reporter-options "mochaFile=cypress/reports/contact-api.xml"
+```
+
+Cette commande exécute les tests API Contact et génère un rapport JUnit XML dans le dossier `cypress/reports/`.
+
+Le rapport indique les tests exécutés, les réussites, les échecs et les messages d'erreur.
+
