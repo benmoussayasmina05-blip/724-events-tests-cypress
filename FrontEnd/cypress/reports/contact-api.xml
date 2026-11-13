@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.178" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-11-12T10:11:27" tests="0" file="cypress\e2e\API\contact-api.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Contact 724 Events" timestamp="2026-11-12T10:11:27" tests="2" time="1.163" failures="0">
+    <testcase name="API Contact 724 Events Vérifier que POST contact retourne le statut 201" time="0.819" classname="Vérifier que POST contact retourne le statut 201">
+    </testcase>
+    <testcase name="API Contact 724 Events Vérifier que POST contact retourne 400 si des champs sont manquants" time="0.200" classname="Vérifier que POST contact retourne 400 si des champs sont manquants">
+    </testcase>
+  </testsuite>
+</testsuites>
